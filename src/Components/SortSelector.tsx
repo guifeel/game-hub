@@ -11,7 +11,7 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
   const sortOrders = [
     { value: '', label: '相关性' },
     { value: '-added', label: '上架日期' },
-    { value: '-name', label: '名称' },
+    { value: '-name', label: '游戏名' },
     { value: '-released', label: '发布日期' },
     { value: '-metacritic', label: '人气' },
     { value: '-rating', label: '平均评级' },

@@ -12,12 +12,13 @@ const useData = <T>(
   requestConfig?: AxiosRequestConfig,
   deps?: any[],
 ) => {
-  const controller = new AbortController();
   const [data, setData] = useState<T[]>([]);
   const [error, setError] = useState('');
   const [isLoading, setLoading] = useState(false);
   useEffect(
     () => {
+      const controller = new AbortController(); // 中断如果在useEffect外就会只有保存才刷新
+
       setLoading(true);
       apiClient
         .get<FetchResponse<T>>(endpoint, {

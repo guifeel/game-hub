@@ -1,16 +1,24 @@
-import { SimpleGrid, Text } from '@chakra-ui/react';
+import { Button, SimpleGrid, Text } from '@chakra-ui/react';
 import { GameQuery } from '../App';
 import useGames from '../hooks/useGames';
 import GameCard from './GameCard';
 import GameCardContainer from './GameCardContainer';
 import GameCardSkeleton from './GameCardSkeleton';
+import React from 'react';
 
 interface Props {
   gameQuery: GameQuery;
 }
 
 const GameGrid = ({ gameQuery }: Props) => {
-  const { data: games, error, isLoading } = useGames(gameQuery);
+  const {
+    data,
+    error,
+    isLoading,
+    hasNextPage,
+    isFetchingNextPage,
+    fetchNextPage,
+  } = useGames(gameQuery);
   const skeletons = [1, 2, 3, 4, 5, 6];
   if (error) return <Text>{error.message}</Text>;
   return (
@@ -25,11 +33,20 @@ const GameGrid = ({ gameQuery }: Props) => {
             <GameCardSkeleton />
           </GameCardContainer>
         ))}
-      {games?.results.map((game) => (
-        <GameCardContainer key={game.id}>
-          <GameCard game={game} />
-        </GameCardContainer>
+      {data?.pages.map((page, index) => (
+        <React.Fragment key={index}>
+          {page.results.map((game) => (
+            <GameCardContainer key={game.id}>
+              <GameCard game={game} />
+            </GameCardContainer>
+          ))}
+        </React.Fragment>
       ))}
+      {hasNextPage && (
+        <Button onClick={() => fetchNextPage()}>
+          {isFetchingNextPage ? '加载中' : '加载更多'}
+        </Button>
+      )}
     </SimpleGrid>
   );
 };

@@ -24,7 +24,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
         游戏分类
       </Heading>
       <List>
-        {data.map((genre) => (
+        {data?.results.map((genre) => (
           <HStack paddingY='5px' key={genre.id}>
             <Image
               boxSize='32px'

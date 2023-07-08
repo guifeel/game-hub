@@ -7,11 +7,11 @@ const GameDetail = () => {
   const { slug } = useParams();
   const { data: game, error, isLoading } = useGame(slug!);
   if (isLoading) return <Spinner />;
-  if (error) throw error;
+  if (error || !game) throw error;
   return (
     <>
-      <Heading py={5}>{game?.name}</Heading>
-      <ExpandableText>{game?.description_raw}</ExpandableText>
+      <Heading py={5}>{game.name}</Heading>
+      <ExpandableText>{game.description_raw}</ExpandableText>
     </>
   );
 };

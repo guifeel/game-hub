@@ -17,11 +17,11 @@ const HomePage = () => {
         templateColumns={{ base: '1fr', lg: '200px 1fr' }}
       >
         <Show above='lg'>
-          <GridItem area={'aside'} paddingX={5}>
+          <GridItem area={'aside'} paddingX={5} as='aside'>
             <GenreList />
           </GridItem>
         </Show>
-        <GridItem area={'main'}>
+        <GridItem area={'main'} as='section'>
           <Box pl={2}>
             <GameHeading />
             <HStack spacing={5} mb={5}>

@@ -9,6 +9,7 @@ const HomePage = () => {
   return (
     <>
       <Grid
+        as='section'
         templateAreas={{
           base: `"main"`,
           lg: ` "aside main"`,

@@ -23,7 +23,7 @@ const GenreList = () => {
       </Heading>
       <List>
         {data?.results.map((genre) => (
-          <HStack paddingY='5px' key={genre.id}>
+          <HStack paddingY='5px' key={genre.id} as='li'>
             <Image
               boxSize='32px'
               borderRadius={8}

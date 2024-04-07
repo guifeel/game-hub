@@ -149,7 +149,7 @@ export default {
     },
     {
       id: 10,
-      name: 'Strategy',
+      name: '策略',
       slug: 'strategy',
       games_count: 53888,
       image_background:
@@ -221,7 +221,7 @@ export default {
     },
     {
       id: 40,
-      name: 'Casual',
+      name: '解压',
       slug: 'casual',
       games_count: 43757,
       image_background:
@@ -252,7 +252,7 @@ export default {
     },
     {
       id: 14,
-      name: 'Simulation',
+      name: '模拟',
       slug: 'simulation',
       games_count: 67385,
       image_background:
@@ -304,7 +304,7 @@ export default {
     },
     {
       id: 11,
-      name: 'Arcade',
+      name: '街机',
       slug: 'arcade',
       games_count: 22544,
       image_background:
@@ -335,7 +335,7 @@ export default {
     },
     {
       id: 83,
-      name: 'Platformer',
+      name: '平台',
       slug: 'platformer',
       games_count: 106974,
       image_background:
@@ -387,7 +387,7 @@ export default {
     },
     {
       id: 59,
-      name: 'Massively Multiplayer',
+      name: '多人在线',
       slug: 'massively-multiplayer',
       games_count: 3169,
       image_background:
@@ -449,7 +449,7 @@ export default {
     },
     {
       id: 6,
-      name: '射击',
+      name: '格斗',
       slug: 'fighting',
       games_count: 12465,
       image_background:

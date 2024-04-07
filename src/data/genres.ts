@@ -190,7 +190,7 @@ export default {
     },
     {
       id: 2,
-      name: 'Shooter',
+      name: '射击',
       slug: 'shooter',
       games_count: 63421,
       image_background:

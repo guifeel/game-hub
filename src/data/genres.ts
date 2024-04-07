@@ -5,7 +5,7 @@ export default {
   results: [
     {
       id: 4,
-      name: 'Action',
+      name: '动作',
       slug: 'action',
       games_count: 179051,
       image_background:
@@ -51,7 +51,7 @@ export default {
     },
     {
       id: 51,
-      name: 'Indie',
+      name: '独立',
       slug: 'indie',
       games_count: 51548,
       image_background:
@@ -72,7 +72,7 @@ export default {
     },
     {
       id: 3,
-      name: 'Adventure',
+      name: '冒险',
       slug: 'adventure',
       games_count: 137837,
       image_background:
@@ -283,7 +283,7 @@ export default {
     },
     {
       id: 7,
-      name: 'Puzzle',
+      name: '解迷',
       slug: 'puzzle',
       games_count: 100740,
       image_background:
@@ -361,7 +361,7 @@ export default {
     },
     {
       id: 1,
-      name: 'Racing',
+      name: '竞速',
       slug: 'racing',
       games_count: 24635,
       image_background:
@@ -413,7 +413,7 @@ export default {
     },
     {
       id: 15,
-      name: 'Sports',
+      name: '体育',
       slug: 'sports',
       games_count: 20844,
       image_background:
@@ -449,7 +449,7 @@ export default {
     },
     {
       id: 6,
-      name: 'Fighting',
+      name: '射击',
       slug: 'fighting',
       games_count: 12465,
       image_background:
@@ -490,7 +490,7 @@ export default {
     },
     {
       id: 19,
-      name: 'Family',
+      name: '家庭',
       slug: 'family',
       games_count: 5380,
       image_background:
@@ -516,7 +516,7 @@ export default {
     },
     {
       id: 28,
-      name: 'Board Games',
+      name: '棋牌',
       slug: 'board-games',
       games_count: 8284,
       image_background:
@@ -547,7 +547,7 @@ export default {
     },
     {
       id: 34,
-      name: 'Educational',
+      name: '教育',
       slug: 'educational',
       games_count: 16381,
       image_background:
@@ -583,7 +583,7 @@ export default {
     },
     {
       id: 17,
-      name: 'Card',
+      name: '卡牌',
       slug: 'card',
       games_count: 4474,
       image_background:
